@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:l10n/l10n.dart';
 import 'package:ui/ui.dart';
 
 void main() {
@@ -11,6 +12,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      localizationsDelegates: Localization.delegates,
+      supportedLocales: Localization.supportedLocales,
       home: WelcomeView(),
     );
   }

@@ -10,10 +10,12 @@ dependencies:
   flutter:
     sdk: flutter
   go_router: ^11.1.4
-  domain:
-    path: packages/domain
   data:
     path: packages/data
+  domain:
+    path: packages/domain
+  l10n:
+    path: packages/l10n
   ui:
     path: packages/ui
 
