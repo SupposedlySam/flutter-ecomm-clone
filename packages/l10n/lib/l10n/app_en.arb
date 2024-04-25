@@ -10,7 +10,7 @@
   "hero3XTitle": "New Collection",
   "hero3XDescription": "Some description that will make you really want to buy this",
   "gridViewXHeader": "GridView Header",
-  "gridViewXCategoryN": "Category ${number}",
+  "gridViewXCategoryN": "Category {number}",
   "@gridViewXCategoryN": {
     "title": "Category {number}",
     "placeholders": {

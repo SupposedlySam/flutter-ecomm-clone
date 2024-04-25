@@ -172,7 +172,7 @@ abstract class AppLocalizations {
   /// No description provided for @gridViewXCategoryN.
   ///
   /// In en, this message translates to:
-  /// **'Category \${number}'**
+  /// **'Category {number}'**
   String gridViewXCategoryN(Object number);
 
   /// No description provided for @quote.

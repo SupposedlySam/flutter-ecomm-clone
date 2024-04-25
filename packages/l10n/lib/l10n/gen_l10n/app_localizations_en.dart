@@ -52,7 +52,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String gridViewXCategoryN(Object number) {
-    return 'Category \$$number';
+    return 'Category $number';
   }
 
   @override
