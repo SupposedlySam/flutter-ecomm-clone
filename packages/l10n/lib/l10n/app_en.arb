@@ -1,3 +1,21 @@
 {
-  "welcomeText": "Welcome to my ecomm app!"
+  "welcomeText": "Welcome",
+  "signIn": "Sign In",
+  "shopNow": "Shop Now",
+  "hero1XTitle": "New Collection",
+  "hero1XSubtitle": "Just Launched",
+  "hero1XDescription": "Some description that will make you really want to buy this",
+  "hero2XTitle": "New Collection",
+  "hero2XDescription": "Some description that will make you really want to buy this",
+  "hero3XTitle": "New Collection",
+  "hero3XDescription": "Some description that will make you really want to buy this",
+  "gridViewXHeader": "GridView Header",
+  "gridViewXCategoryN": "Category ${number}",
+  "@gridViewXCategoryN": {
+    "title": "Category {number}",
+    "placeholders": {
+      "number": {}
+    }
+  },
+  "quote": "This is something that cannot be missed and should be called out in all bold"
 }

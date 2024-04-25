@@ -106,8 +106,80 @@ abstract class AppLocalizations {
   /// No description provided for @welcomeText.
   ///
   /// In en, this message translates to:
-  /// **'Welcome to my ecomm app!'**
+  /// **'Welcome'**
   String get welcomeText;
+
+  /// No description provided for @signIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get signIn;
+
+  /// No description provided for @shopNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Shop Now'**
+  String get shopNow;
+
+  /// No description provided for @hero1XTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Collection'**
+  String get hero1XTitle;
+
+  /// No description provided for @hero1XSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Just Launched'**
+  String get hero1XSubtitle;
+
+  /// No description provided for @hero1XDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Some description that will make you really want to buy this'**
+  String get hero1XDescription;
+
+  /// No description provided for @hero2XTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Collection'**
+  String get hero2XTitle;
+
+  /// No description provided for @hero2XDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Some description that will make you really want to buy this'**
+  String get hero2XDescription;
+
+  /// No description provided for @hero3XTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'New Collection'**
+  String get hero3XTitle;
+
+  /// No description provided for @hero3XDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Some description that will make you really want to buy this'**
+  String get hero3XDescription;
+
+  /// No description provided for @gridViewXHeader.
+  ///
+  /// In en, this message translates to:
+  /// **'GridView Header'**
+  String get gridViewXHeader;
+
+  /// No description provided for @gridViewXCategoryN.
+  ///
+  /// In en, this message translates to:
+  /// **'Category \${number}'**
+  String gridViewXCategoryN(Object number);
+
+  /// No description provided for @quote.
+  ///
+  /// In en, this message translates to:
+  /// **'This is something that cannot be missed and should be called out in all bold'**
+  String get quote;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

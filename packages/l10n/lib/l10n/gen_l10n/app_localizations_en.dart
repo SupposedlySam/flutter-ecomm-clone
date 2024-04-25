@@ -18,5 +18,43 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get welcomeText => 'Welcome to my ecomm app!';
+  String get welcomeText => 'Welcome';
+
+  @override
+  String get signIn => 'Sign In';
+
+  @override
+  String get shopNow => 'Shop Now';
+
+  @override
+  String get hero1XTitle => 'New Collection';
+
+  @override
+  String get hero1XSubtitle => 'Just Launched';
+
+  @override
+  String get hero1XDescription => 'Some description that will make you really want to buy this';
+
+  @override
+  String get hero2XTitle => 'New Collection';
+
+  @override
+  String get hero2XDescription => 'Some description that will make you really want to buy this';
+
+  @override
+  String get hero3XTitle => 'New Collection';
+
+  @override
+  String get hero3XDescription => 'Some description that will make you really want to buy this';
+
+  @override
+  String get gridViewXHeader => 'GridView Header';
+
+  @override
+  String gridViewXCategoryN(Object number) {
+    return 'Category \$$number';
+  }
+
+  @override
+  String get quote => 'This is something that cannot be missed and should be called out in all bold';
 }
