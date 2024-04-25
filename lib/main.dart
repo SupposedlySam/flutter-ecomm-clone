@@ -11,10 +11,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: AppTheme.lightTheme,
       localizationsDelegates: Localization.delegates,
       supportedLocales: Localization.supportedLocales,
-      home: WelcomeView(),
+      home: const WelcomeView(),
     );
   }
 }
