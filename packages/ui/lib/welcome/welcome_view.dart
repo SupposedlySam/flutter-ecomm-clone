@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:l10n/l10n.dart';
 import 'package:ui/utils/inset.dart';
-import 'package:ui/welcome/components/section_header.dart';
 import 'package:ui/welcome/components/header.dart';
+import 'package:ui/welcome/components/padded_horizontal_list.dart';
 import 'package:ui/welcome/components/product_card.dart';
 import 'package:ui/welcome/components/quote_block.dart';
+import 'package:ui/welcome/components/section_header.dart';
 import 'package:ui/welcome/components/shop_by_card.dart';
 
 class WelcomeView extends LocalizedStatelessWidget {
@@ -58,26 +59,26 @@ class WelcomeView extends LocalizedStatelessWidget {
                 ),
               ],
             ),
-            SectionHeader(title: l.gridViewXHeader),
-            Inset.symmetricSliver(
-              sliver: SliverGrid.count(
-                crossAxisCount: 2,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 8,
-                childAspectRatio: 1 / 2,
-                children: [
-                  ProductCard(
-                    descriptor: l.productDescriptorN(1),
-                    name: l.productNameN(1),
-                    price: 48.99,
-                  ),
-                  ProductCard(
-                    descriptor: l.productDescriptorN(2),
-                    name: l.productNameN(2),
-                    price: 70.99,
-                    deal: const Deal(quantity: 3, price: 36.99),
-                  )
-                ],
+            SectionHeader(title: l.listViewXHeader),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 400,
+                child: PaddedHorizontalList(
+                  spacing: const SizedBox(width: 12),
+                  children: [
+                    ProductCard(
+                      descriptor: l.productDescriptorN(1),
+                      name: l.productNameN(1),
+                      price: 48.99,
+                    ),
+                    ProductCard(
+                      descriptor: l.productDescriptorN(2),
+                      name: l.productNameN(2),
+                      price: 70.99,
+                      deal: const Deal(quantity: 3, price: 36.99),
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

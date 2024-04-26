@@ -51,6 +51,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get gridViewXHeader => 'GridView Header';
 
   @override
+  String get listViewXHeader => 'ListView Header';
+
+  @override
   String gridViewXCategoryN(Object number) {
     return 'Category $number';
   }

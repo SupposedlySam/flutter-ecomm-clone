@@ -169,6 +169,12 @@ abstract class AppLocalizations {
   /// **'GridView Header'**
   String get gridViewXHeader;
 
+  /// No description provided for @listViewXHeader.
+  ///
+  /// In en, this message translates to:
+  /// **'ListView Header'**
+  String get listViewXHeader;
+
   /// No description provided for @gridViewXCategoryN.
   ///
   /// In en, this message translates to:

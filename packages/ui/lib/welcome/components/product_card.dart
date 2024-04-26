@@ -24,7 +24,7 @@ class ProductCard extends LocalizedStatelessWidget {
       children: [
         Container(
           height: 300,
-          width: double.infinity,
+          width: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(8),
             image: DecorationImage(
