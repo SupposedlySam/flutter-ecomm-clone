@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:ui/extensions/context_extension.dart';
 import 'package:ui/utils/inset.dart';
 
-class GridViewHeader extends StatelessWidget {
-  const GridViewHeader({
+class SectionHeader extends StatelessWidget {
+  const SectionHeader({
     required this.title,
     super.key,
   });

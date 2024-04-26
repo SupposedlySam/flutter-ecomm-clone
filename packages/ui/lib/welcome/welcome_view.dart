@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:l10n/l10n.dart';
 import 'package:ui/utils/inset.dart';
-import 'package:ui/welcome/components/grid_view_header.dart';
+import 'package:ui/welcome/components/section_header.dart';
 import 'package:ui/welcome/components/header.dart';
 import 'package:ui/welcome/components/product_card.dart';
 import 'package:ui/welcome/components/quote_block.dart';
@@ -27,7 +27,7 @@ class WelcomeView extends LocalizedStatelessWidget {
                 ),
               ],
             ),
-            GridViewHeader(title: l.gridViewXHeader),
+            SectionHeader(title: l.gridViewXHeader),
             Inset.symmetricSliver(
               sliver: SliverGrid.count(
                 crossAxisCount: 2,
@@ -58,7 +58,7 @@ class WelcomeView extends LocalizedStatelessWidget {
                 ),
               ],
             ),
-            GridViewHeader(title: l.gridViewXHeader),
+            SectionHeader(title: l.gridViewXHeader),
             Inset.symmetricSliver(
               sliver: SliverGrid.count(
                 crossAxisCount: 2,
