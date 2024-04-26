@@ -3,6 +3,7 @@ import 'package:l10n/l10n.dart';
 import 'package:ui/utils/inset.dart';
 import 'package:ui/welcome/components/grid_view_header.dart';
 import 'package:ui/welcome/components/header.dart';
+import 'package:ui/welcome/components/product_card.dart';
 import 'package:ui/welcome/components/quote_block.dart';
 import 'package:ui/welcome/components/shop_by_card.dart';
 
@@ -63,10 +64,19 @@ class WelcomeView extends LocalizedStatelessWidget {
                 crossAxisCount: 2,
                 crossAxisSpacing: 8,
                 mainAxisSpacing: 8,
-                childAspectRatio: 3 / 5,
+                childAspectRatio: 1 / 2,
                 children: [
-                  ShopByCard(title: l.gridViewXCategoryN(1)),
-                  ShopByCard(title: l.gridViewXCategoryN(2)),
+                  ProductCard(
+                    descriptor: l.productDescriptorN(1),
+                    name: l.productNameN(1),
+                    price: 48.99,
+                  ),
+                  ProductCard(
+                    descriptor: l.productDescriptorN(2),
+                    name: l.productNameN(2),
+                    price: 70.99,
+                    deal: const Deal(quantity: 3, price: 36.99),
+                  )
                 ],
               ),
             ),

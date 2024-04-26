@@ -180,6 +180,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'This is something that cannot be missed and should be called out in all bold'**
   String get quote;
+
+  /// No description provided for @productDescriptorN.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Descriptor {number}'**
+  String productDescriptorN(Object number);
+
+  /// No description provided for @productNameN.
+  ///
+  /// In en, this message translates to:
+  /// **'Product Name {number}'**
+  String productNameN(Object number);
+
+  /// No description provided for @productDeal.
+  ///
+  /// In en, this message translates to:
+  /// **'{quantity} For {price}'**
+  String productDeal(Object quantity, Object price);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

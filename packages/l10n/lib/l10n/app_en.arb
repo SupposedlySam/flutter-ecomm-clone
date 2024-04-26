@@ -17,5 +17,21 @@
       "number": {}
     }
   },
-  "quote": "This is something that cannot be missed and should be called out in all bold"
+  "quote": "This is something that cannot be missed and should be called out in all bold",
+  "productDescriptorN": "Product Descriptor {number}",
+  "@productDescriptorN": {
+    "title": "Product Descriptor {number}",
+    "placeholders": {
+      "number": {}
+    }
+  },
+  "productNameN": "Product Name {number}",
+  "productDeal": "{quantity} For {price}",
+  "@productDeal": {
+    "title": "{quantity} For {price}",
+    "placeholders": {
+      "quantity": {},
+      "price": {}
+    }
+  }
 }

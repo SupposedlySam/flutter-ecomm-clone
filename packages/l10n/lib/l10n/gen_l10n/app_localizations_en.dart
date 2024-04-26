@@ -57,4 +57,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get quote => 'This is something that cannot be missed and should be called out in all bold';
+
+  @override
+  String productDescriptorN(Object number) {
+    return 'Product Descriptor $number';
+  }
+
+  @override
+  String productNameN(Object number) {
+    return 'Product Name $number';
+  }
+
+  @override
+  String productDeal(Object quantity, Object price) {
+    return '$quantity For $price';
+  }
 }
