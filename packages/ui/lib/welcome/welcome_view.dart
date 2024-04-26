@@ -61,8 +61,8 @@ class WelcomeView extends LocalizedStatelessWidget {
             ),
             SectionHeader(title: l.listViewXHeader),
             SliverToBoxAdapter(
-              child: SizedBox(
-                height: 400,
+              child: LimitedBox(
+                maxHeight: 400,
                 child: PaddedHorizontalList(
                   spacing: const SizedBox(width: 12),
                   children: [

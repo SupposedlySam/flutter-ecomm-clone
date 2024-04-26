@@ -15,16 +15,17 @@ class ShopByCard extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          height: 300,
-          width: double.infinity,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            image: DecorationImage(
-              image: Image.network(
-                'https://placehold.it/200x300',
-              ).image,
-              fit: BoxFit.cover,
+        LimitedBox(
+          maxHeight: 300,
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              image: DecorationImage(
+                image: Image.network(
+                  'https://placehold.it/200x300',
+                ).image,
+                fit: BoxFit.cover,
+              ),
             ),
           ),
         ),
