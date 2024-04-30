@@ -24,7 +24,7 @@ extension IterableExtensions<T> on Iterable<T> {
   ///   RegularText('item3'),
   /// ]
   /// ```
-  List<T> joinWith<T>(T separator) {
+  List<T> joinWith<Separator extends T>(Separator separator) {
     if (separator == null) return [];
     if (length <= 0) return [separator];
     if (length == 1) return List<T>.from(this);
