@@ -3,7 +3,7 @@ import 'package:l10n/l10n.dart';
 import 'package:ui/utils/inset.dart';
 import 'package:ui/welcome/components/header.dart';
 import 'package:ui/welcome/components/hero_cta.dart';
-import 'package:ui/welcome/components/padded_horizontal_list.dart';
+import 'package:ui/components/padded_horizontal_list.dart';
 import 'package:ui/welcome/components/product_card.dart';
 import 'package:ui/welcome/components/quote_block.dart';
 import 'package:ui/welcome/components/section_header.dart';
