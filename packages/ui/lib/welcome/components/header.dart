@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:l10n/l10n.dart';
-import 'package:ui/ui.dart';
 
 class Header extends LocalizedStatelessWidget {
   const Header({
