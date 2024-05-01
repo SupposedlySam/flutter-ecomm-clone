@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:l10n/l10n.dart';
 import 'package:ui/utils/inset.dart';
 import 'package:ui/welcome/components/header.dart';
+import 'package:ui/welcome/components/hero_cta.dart';
 import 'package:ui/welcome/components/padded_horizontal_list.dart';
 import 'package:ui/welcome/components/product_card.dart';
 import 'package:ui/welcome/components/quote_block.dart';
@@ -9,7 +10,9 @@ import 'package:ui/welcome/components/section_header.dart';
 import 'package:ui/welcome/components/shop_by_card.dart';
 
 class WelcomeView extends LocalizedStatelessWidget {
-  const WelcomeView({super.key});
+  const WelcomeView({required this.onCollectionSelected, super.key});
+
+  final void Function(String) onCollectionSelected;
 
   @override
   Widget builder(BuildContext context, AppLocalizations l) {
@@ -21,6 +24,7 @@ class WelcomeView extends LocalizedStatelessWidget {
               children: [
                 Inset.symmetric(child: const Header()),
                 HeroCTA(
+                  onPressed: () => onCollectionSelected('1'),
                   subtitle: l.hero1XSubtitle,
                   title: l.hero1XTitle,
                   description: l.hero1XDescription,
@@ -47,12 +51,14 @@ class WelcomeView extends LocalizedStatelessWidget {
               children: [
                 const SizedBox(height: 24),
                 HeroCTA(
+                  onPressed: () => onCollectionSelected('2'),
                   title: l.hero2XTitle,
                   description: l.hero2XDescription,
                   ctaText: l.shopNow,
                 ),
                 QuoteBlock(quote: l.quote),
                 HeroCTA(
+                  onPressed: () => onCollectionSelected('3'),
                   title: l.hero3XTitle,
                   description: l.hero3XDescription,
                   ctaText: l.shopNow,
