@@ -99,6 +99,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "11.1.4"
+  go_router_paths:
+    dependency: "direct main"
+    description:
+      name: go_router_paths
+      sha256: bd609083175a656c0cbb86de8a1b4d0dc8727abd946a7de3796be71e279f22a2
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1"
   intl:
     dependency: transitive
     description:
