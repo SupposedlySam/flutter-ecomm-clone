@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/components/padded_horizontal_list.dart';
+import 'package:ui/ui.dart';
 
 class CollectionView extends StatelessWidget {
   const CollectionView({required this.id, super.key});
@@ -22,45 +23,72 @@ class CollectionView extends StatelessWidget {
                     // Use a button with text
                     TextButton(
                       onPressed: () => print('Filter 1'),
-                      child: Text('Filter 1'),
+                      child: Text(
+                        'Filter 1',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     // repeat for 9 buttons
                     TextButton(
                       onPressed: () => print('Filter 2'),
-                      child: Text('Filter 2'),
+                      child: Text(
+                        'Filter 2',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 3'),
-                      child: Text('Filter 3'),
+                      child: Text(
+                        'Filter 3',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 4'),
-                      child: Text('Filter 4'),
+                      child: Text(
+                        'Filter 4',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 5'),
-                      child: Text('Filter 5'),
+                      child: Text(
+                        'Filter 5',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 6'),
-                      child: Text('Filter 6'),
+                      child: Text(
+                        'Filter 6',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 7'),
-                      child: Text('Filter 7'),
+                      child: Text(
+                        'Filter 7',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 8'),
-                      child: Text('Filter 8'),
+                      child: Text(
+                        'Filter 8',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                     TextButton(
                       onPressed: () => print('Filter 9'),
-                      child: Text('Filter 9'),
+                      child: Text(
+                        'Filter 9',
+                        style: context.displayMedium.white,
+                      ),
                     ),
                   ],
                 ),
                 pinned: true,
-                title: Text('Collection $id'),
+                title: Text('Collection $id'.toUpperCase()),
                 leading: IconButton(
                   icon: const Icon(Icons.arrow_back),
                   onPressed: () => Navigator.of(context).pop(),
@@ -102,7 +130,7 @@ class PreferredSizePaddedHorizontalList extends PaddedHorizontalList
   @override
   Widget build(BuildContext context) {
     return LimitedBox(
-      maxHeight: kMinInteractiveDimension,
+      maxHeight: 34,
       child: super.build(context),
     );
   }

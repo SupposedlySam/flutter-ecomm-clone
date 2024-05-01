@@ -9,8 +9,8 @@ class AppTheme {
   static const Color taupe = Color(0xffB6A292);
   static const Color caramel = Color(0xffA57B61);
   static const Color mocha = Color(0xff5E463C);
-  static const Color black = Color(0xff000000);
-  static const Color primary = caramel;
+  static const Color black = Color(0xff333333);
+  static const Color primary = mocha;
   static const TextStyle defaultTextStyle = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w500,
@@ -121,17 +121,45 @@ class AppTheme {
           foregroundColor: MaterialStateProperty.all(primary),
         ),
       ),
+      colorScheme: theme.colorScheme.copyWith(
+        primary: primary,
+        secondary: primary,
+        background: white,
+        surface: white,
+        error: Colors.red,
+        onPrimary: white,
+        onSecondary: white,
+        onBackground: black,
+        onSurface: black,
+        onError: white,
+      ),
+      appBarTheme: theme.appBarTheme.copyWith(
+        backgroundColor: white,
+        foregroundColor: primary,
+        titleTextStyle: theme.textTheme.displayLarge!.copyWith(
+          fontSize: 28,
+          fontWeight: FontWeight.w700,
+          color: AppTheme.black,
+          letterSpacing: -0.2,
+        ),
+        actionsIconTheme: theme.iconTheme.copyWith(color: primary, size: 32),
+        iconTheme: theme.iconTheme.copyWith(color: primary),
+      ),
     );
   }
 
   static ThemeData get lightTheme {
-    return _buildTheme(ThemeData(colorSchemeSeed: primary));
+    return _buildTheme(ThemeData(
+      colorSchemeSeed: primary,
+      useMaterial3: false,
+    ));
   }
 
   static ThemeData get darkTheme {
     return _buildTheme(ThemeData(
       colorSchemeSeed: primary,
       brightness: Brightness.dark,
+      useMaterial3: false,
     ));
   }
 }
